@@ -7,19 +7,19 @@
 
 <body>
 
-    <p>
-        <label>Celsius</label>
-        <input id="inputCelsius" type="number" placeholder="Celsius" oninput="temperatureConverter(this.value)" onchange="temperatureConverter(this.value)">
-    </p>
-    <p>Kelvin: <span id="outputKelvin"></span></p>
+<p>
+  <label>Celsius</label>
+  <input id="inputCelsius" type="number" placeholder="Celsius" oninput="temperatureConverter(this.value)" onchange="temperatureConverter(this.value)">
+</p>
+<p>Kelvin: <span id="outputKelvin"></span></p>
 
-    <script>
-        function temperatureConverter(valNum) {
-            valNum = parseFloat(valNum);
-            document.getElementById("outputKelvin").innerHTML = valNum + 273.15;
-        }
+<script>
+function temperatureConverter(valNum) {
+  valNum = parseFloat(valNum);
+  document.getElementById("outputKelvin").innerHTML=valNum+273.15;
+}
+</script>
 
-    </script>
 </body>
 
 </html>
